@@ -95,7 +95,7 @@ void ac_dimmer_set_frequency(uint8_t ac_frequency) {
 
 
 int ac_dimmer_create(ac_dimmer_config_t config) {
-    if (dimmers_count >= AC_DIMMER_MAX_COUNT-1) {
+    if (dimmers_count >= AC_DIMMER_MAX_COUNT) {
         return -1;
     }
 
